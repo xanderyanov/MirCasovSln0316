@@ -19,8 +19,15 @@ using MirChasov.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "D:\aaaMirChasov2022\MirChasovSln\MirChasov\Views\_ViewImports.cshtml"
+using MirChasov.Models.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"09c07eaf4711b92025592bc574fecc5afb81f6ac", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2b883dbdbbc1eb2460d904b7d9ce88dcdc6769bc", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0d5481fec1dbf6ea459e9ae811b6fa3cea84c396", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
