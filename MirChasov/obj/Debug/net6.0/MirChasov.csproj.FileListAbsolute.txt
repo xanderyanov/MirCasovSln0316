@@ -1,0 +1,8 @@
+D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\net6.0\MirChasov.csproj.AssemblyReference.cache
+D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\net6.0\MirChasov.GeneratedMSBuildEditorConfig.editorconfig
+D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\net6.0\MirChasov.AssemblyInfoInputs.cache
+D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\net6.0\MirChasov.AssemblyInfo.cs
+D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\net6.0\MirChasov.csproj.CoreCompileInputs.cache
+D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\net6.0\MirChasov.MvcApplicationPartsAssemblyInfo.cache
+D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\net6.0\MirChasov.RazorAssemblyInfo.cache
+D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\net6.0\MirChasov.RazorAssemblyInfo.cs
