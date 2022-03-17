@@ -58,3 +58,4 @@ D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\netcoreapp3.1\MirChasov.Raz
 D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\netcoreapp3.1\MirChasov.Views.pdb
 D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\netcoreapp3.1\MirChasov.csproj.CopyComplete
 D:\aaaMirChasov2022\MirChasovSln\MirChasov\bin\Debug\netcoreapp3.1\libman.json
+D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\netcoreapp3.1\Razor\Views\Home\Catalog.cshtml.g.cs

@@ -43,7 +43,17 @@ namespace MirChasov
             app.UseStaticFiles();
             app.UseRouting();
             app.UseEndpoints(endpoints => {
-                endpoints.MapDefaultControllerRoute();
+                //endpoints.MapControllerRoute(
+                //    name: "Catalog",
+                //    pattern: "{lang=ru}/Home2/{action=Catalog}/{id?}",
+                //    defaults: new { controller = "Home" }
+                //).WithDisplayName("Catalog");
+
+                endpoints.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                //endpoints.MapDefaultControllerRoute();
             });
         }
     }
