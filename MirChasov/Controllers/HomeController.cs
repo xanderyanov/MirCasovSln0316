@@ -23,7 +23,7 @@ namespace MirChasov.Controllers
             return View(products);
         }
 
-        public IActionResult Catalog(int productPage = 1)
+        public IActionResult Catalog(string category, int productPage = 1)
         {
             var productsCollection = Program.DB.GetCollection<Product>("products");
             BsonDocument filter = new BsonDocument();
@@ -32,6 +32,7 @@ namespace MirChasov.Controllers
             return View(new ProductsListViewModel
             {
                 Products = products
+                   .Where(p => category == null || p.Brand == category)
                    .OrderBy(p => p.Id)
                    .Skip((productPage - 1) * PageSize)
                    .Take(PageSize),
@@ -40,7 +41,8 @@ namespace MirChasov.Controllers
                     CurrentPage = productPage,
                     ItemsPerPage = PageSize,
                     TotalItems = products.Count()
-                }
+                },
+                CurrentCategory = category
             });
         }
     }
