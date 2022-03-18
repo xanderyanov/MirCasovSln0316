@@ -12,10 +12,10 @@
         <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
             <ul class="navbar-nav flex-grow-1">
                 <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    <a class="nav-link" href="/" >Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Catalog">Товары</a>
+                    <a class="nav-link" href="/Catalog" >Товары</a>
                 </li>
 
             </ul>
@@ -23,7 +23,7 @@
     </div>
     <div class="row m-1 p-1">
         <div id="categories" class="col-3">
-            Put something useful here later
+            <vc:navigation-menu />
         </div>
         <div class="col-9">
             @RenderBody()

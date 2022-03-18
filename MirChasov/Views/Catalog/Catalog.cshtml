@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Home Page";
-    var SaleLeader = Model.Products.Where(x => x.FlagSaleLeader).ToList();
+    
 }
 
 <div class="text-center">
@@ -21,5 +21,9 @@
         }
     </div>
     <img src="https://mirchasov64.ru/assets/img/logo1.png" alt="Alternate Text" />
-    <div page-model="@Model.PagingInfo" page-action="Index"></div>   
+        <div page-model="@Model.PagingInfo" page-action="" page-classes-enabled="true"
+         page-class="btn" page-class-normal="btn-outline-dark"
+         page-class-selected="btn-primary" page-url-category="@Model.CurrentCategory"
+         class="btn-group pull-right m-1">
+    </div>   
 </div>
