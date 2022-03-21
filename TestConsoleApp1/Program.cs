@@ -23,6 +23,8 @@ namespace TestConsoleApp1
         static void Main(string[] args)
         {
             MakeTree(5);
+
+            Console.WriteLine(new string('#', 100));
         }
     }
 }

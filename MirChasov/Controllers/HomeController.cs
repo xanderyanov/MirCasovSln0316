@@ -12,15 +12,10 @@ namespace MirChasov.Controllers
 {
     public class HomeController : Controller
     {
-        public int PageSize = 24;
 
         public IActionResult Index()
         {
-            var productsCollection = Program.DB.GetCollection<Product>("products");
-            BsonDocument filter = new BsonDocument();
-            IEnumerable<Product> products = productsCollection.Find(filter).ToList();
-
-            return View(products);
+            return View(Data.Products);
         }
 
 

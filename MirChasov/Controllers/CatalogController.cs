@@ -14,15 +14,15 @@ namespace MirChasov.Controllers
     {
         public int PageSize = 24;
 
-        public IActionResult Index(string category, int productPage = 1)
+        public IActionResult Brand(string id, int productPage = 1)
         {
             var products = Data.Products;
 
             return View("Catalog", new ProductsListViewModel
             {
                 Products = products
-                   .Where(p => category == null || p.Brand == category)
-                   .OrderBy(p => p.Id)
+                   .Where(p => id == null || p.Brand == id)
+                   //.OrderBy(p => p.Id)
                    .Skip((productPage - 1) * PageSize)
                    .Take(PageSize),
                 PagingInfo = new PagingInfo
@@ -31,7 +31,25 @@ namespace MirChasov.Controllers
                     ItemsPerPage = PageSize,
                     TotalItems = products.Count()
                 },
-                CurrentCategory = category
+                CurrentCategory = id
+            });
+        }
+
+        public IActionResult Index(string id, int productPage = 1)
+        {
+            return View("Catalog", new ProductsListViewModel
+            {
+                Products = Data.Products
+                   //.OrderBy(p => p.Id)
+                   .Skip((productPage - 1) * PageSize)
+                   .Take(PageSize),
+                PagingInfo = new PagingInfo
+                {
+                    CurrentPage = productPage,
+                    ItemsPerPage = PageSize,
+                    TotalItems = Data.Products.Count()
+                },
+                CurrentCategory = id
             });
         }
 

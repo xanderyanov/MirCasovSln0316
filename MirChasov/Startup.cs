@@ -41,7 +41,7 @@ namespace MirChasov
                 //   new { controller = "Blog", action = "Index" });
 
                 endpoints.MapControllerRoute("route1",
-                   "{controller}/{action}",
+                   "{controller}/{action}/{id?}",
                    new { controller = "Home", action = "Index" });
 
                 endpoints.MapDefaultControllerRoute();

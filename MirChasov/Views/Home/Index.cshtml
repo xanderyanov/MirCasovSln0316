@@ -5,12 +5,12 @@
     var SaleLeader = Model.Where(x => x.FlagSaleLeader).ToList();
 }
 
-<div class="text-center">
+<div class="text-center col-12">
     <h1 class="display-4">Главная страница</h1>
 
     <div class="row">
         @foreach (var p in SaleLeader) {
-            <div class="col-2 mb-3">
+            <div class="card col-1 mb-3">
                 <h3>@p.Title</h3>
                 <img src="/img/test1.jpg" alt="Alternate Text" />
                 <p>@p.Brand</p>

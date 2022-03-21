@@ -59,3 +59,4 @@ D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\netcoreapp3.1\MirChasov.Vie
 D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\netcoreapp3.1\MirChasov.csproj.CopyComplete
 D:\aaaMirChasov2022\MirChasovSln\MirChasov\bin\Debug\netcoreapp3.1\libman.json
 D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Catalog.cshtml.g.cs
+D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\NavigationMenu\Default.cshtml.g.cs

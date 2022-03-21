@@ -5,25 +5,30 @@
     
 }
 
-<div class="text-center">
-    <h1 class="display-4">Главная страница</h1>
+<div id="categories" class="col-3">
+            <vc:navigation-menu />
+</div>
+<div class="col-9">
+    <div class="text-center">
+        <h1 class="display-4">Главная страница</h1>
 
-    <div class="row">
-        @foreach (var p in Model.Products) {
-            <div class="card col-1 mb-3">
-                <h3>@p.Title</h3>
-                <img src="/img/test1.jpg" alt="Alternate Text" />
-                <p>@p.Brand</p>
-                @p.Description
-                    <p>@p.dblCaseSize</p>
-                <h4>@p.PriceWithDiscount.ToString("c")</h4>
-            </div>
-        }
+        <div class="row">
+            @foreach (var p in Model.Products) {
+                <div class="card col-1 mb-3">
+                    <h3>@p.Title</h3>
+                    <img src="/img/test1.jpg" alt="Alternate Text" />
+                    <p>@p.Brand</p>
+                    @p.Description
+                        <p>@p.dblCaseSize</p>
+                    <h4>@p.PriceWithDiscount.ToString("c")</h4>
+                </div>
+            }
+        </div>
+        <img src="https://mirchasov64.ru/assets/img/logo1.png" alt="Alternate Text" />
+            <div page-model="@Model.PagingInfo" page-action="" page-classes-enabled="true"
+             page-class="btn" page-class-normal="btn-outline-dark"
+             page-class-selected="btn-primary" page-url-category="@Model.CurrentCategory"
+             class="btn-group pull-right m-1">
+        </div>   
     </div>
-    <img src="https://mirchasov64.ru/assets/img/logo1.png" alt="Alternate Text" />
-        <div page-model="@Model.PagingInfo" page-action="" page-classes-enabled="true"
-         page-class="btn" page-class-normal="btn-outline-dark"
-         page-class-selected="btn-primary" page-url-category="@Model.CurrentCategory"
-         class="btn-group pull-right m-1">
-    </div>   
 </div>
