@@ -16,9 +16,7 @@ namespace MirChasov.Controllers
 
         public IActionResult Index(string category, int productPage = 1)
         {
-            var productsCollection = Program.DB.GetCollection<Product>("products");
-            BsonDocument filter = new BsonDocument();
-            IEnumerable<Product> products = productsCollection.Find(filter).ToList();
+            var products = Data.Products;
 
             return View("Catalog", new ProductsListViewModel
             {

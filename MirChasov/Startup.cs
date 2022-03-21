@@ -24,20 +24,12 @@ namespace MirChasov
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            
-            var dbConfigSection = Configuration.GetSection("DBConfig");
-            var dbConfig = new DBConf(dbConfigSection);
-            var mongoClient = new MongoClient(dbConfig.ConnectionString);
-            Program.DB = mongoClient.GetDatabase(dbConfig.DBName);
 
+            Data.InitData(Configuration);
         }
-
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-
-            
-
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
