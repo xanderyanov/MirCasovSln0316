@@ -10,13 +10,18 @@ using MirChasov.Models.ViewModels;
 
 namespace MirChasov.Controllers
 {
-    public class CatalogController : Controller
+    public class CatalogController : BaseController
     {
         public int PageSize = 24;
+
+        
 
         public IActionResult Brand(string id, int productPage = 1)
         {
             var products = Data.Products;
+
+            Bucket.SelectedCategory = id;
+            Bucket.Title = $"Часы {id} в магазине Часовой Мир";
 
             return View("Catalog", new ProductsListViewModel
             {
