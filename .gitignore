@@ -5,6 +5,8 @@
 /.vs
 /*/bin
 /*/obj
+/MirChasov/obj
+/MirChasov/obj/
 *.generated.cs
 *.cd
 *.user
