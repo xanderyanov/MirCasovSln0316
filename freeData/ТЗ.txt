@@ -1,0 +1,32 @@
+1. Две страницы - главная и каталог (верстка bootstrap - минимальная, ссылки друг на друга). на странице каталога выводятся все часы, которые есть.
+2. Модель - часы. Несколько основных свойств.
+3. Информация о часах хранится в базе данных (MongoDB). (туда заносится руками пока что)
+
+В настройках MongoDb  - mongod.cfg
+security:
+	authorization: "enabled"
+*******************************************************************
+добавление пользователя в базу - для корректной работы. (переключившися на use admin)
+db.createUser(
+  {
+    user: "master",
+    pwd:  "159753",
+	"roles" : [ 
+		{
+			"role" : "dbAdminAnyDatabase",
+			"db" : "admin"
+		}, 
+		{
+			"role" : "readWriteAnyDatabase",
+			"db" : "admin"
+		}, 
+		{
+			"role" : "userAdminAnyDatabase",
+			"db" : "admin"
+		}]
+	}
+)
+
+mongodb://master:159753@localhost:27017/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false
+*******************************************************************
+

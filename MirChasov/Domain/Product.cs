@@ -7,7 +7,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace MirChasov
 {
-    [BsonIgnoreExtraElements]
+    [BsonIgnoreExtraElements]  //если какого-то поля нет - не выведет ошибку а проигнорирует
     public class Product
     {
         public ObjectId Id { get; set; }

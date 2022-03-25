@@ -10,6 +10,7 @@ namespace MirChasov.Components
     {
         public IViewComponentResult Invoke()
         {
+            ViewBag.SelectedCategory = RouteData?.Values["id"];
             return View(Data.Categories);
         }
     }

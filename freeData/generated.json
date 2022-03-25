@@ -1,0 +1,72 @@
+[
+  {
+    "ProductID": 0,
+    "Price": 2737.61,
+    "Name": "Flores Solomon",
+    "ShowOnMainPage": true,
+    "Description": "Velit et ut anim culpa laboris et sit nostrud. Quis officia tempor reprehenderit deserunt cillum. Laboris eu occaecat cupidatat id deserunt excepteur eiusmod ullamco sunt consequat labore est mollit. Voluptate laboris est dolore et non nostrud culpa irure excepteur exercitation sunt. Labore quis non culpa ex incididunt pariatur non proident. Aute voluptate aliqua deserunt ad aliquip proident laborum minim enim elit. Cillum deserunt esse ullamco reprehenderit deserunt ullamco laborum officia deserunt ipsum ad ex.\r\n"
+  },
+  {
+    "ProductID": 1,
+    "Price": 2747.37,
+    "Name": "Lynne Snyder",
+    "ShowOnMainPage": true,
+    "Description": "Nisi nostrud occaecat exercitation irure excepteur fugiat. Minim fugiat ex excepteur irure ea dolor. Reprehenderit voluptate aliquip culpa laboris elit consectetur.\r\n"
+  },
+  {
+    "ProductID": 2,
+    "Price": 1076.14,
+    "Name": "Beck Walter",
+    "ShowOnMainPage": false,
+    "Description": "Laboris culpa nulla labore deserunt veniam fugiat eiusmod. Sint culpa ex elit ipsum ipsum et pariatur duis aute dolore duis adipisicing. Adipisicing ex sint laboris ut excepteur. Cillum Lorem minim mollit est cupidatat amet. Voluptate aliquip et amet esse occaecat ut excepteur do occaecat irure excepteur eiusmod.\r\n"
+  },
+  {
+    "ProductID": 3,
+    "Price": 1498.28,
+    "Name": "Lela Baxter",
+    "ShowOnMainPage": false,
+    "Description": "Elit exercitation sit elit enim sunt. Anim in pariatur ut do officia voluptate. Sunt proident dolore et Lorem mollit excepteur est.\r\n"
+  },
+  {
+    "ProductID": 4,
+    "Price": 254.58,
+    "Name": "Diane Holden",
+    "ShowOnMainPage": false,
+    "Description": "Mollit aute ut nisi proident. Exercitation aliquip ut tempor incididunt esse enim et eu eu. Sunt veniam mollit laboris est reprehenderit magna irure quis commodo tempor deserunt. Officia fugiat deserunt elit laborum do do Lorem ut et elit anim et eiusmod ea. Et sunt et commodo laboris sint enim incididunt deserunt labore pariatur pariatur anim dolor voluptate. Enim amet ut enim voluptate ipsum esse laboris tempor sunt adipisicing adipisicing non aliqua tempor. Ea dolore incididunt ut eiusmod ea eiusmod esse laboris.\r\n"
+  },
+  {
+    "ProductID": 5,
+    "Price": 523.37,
+    "Name": "May Guy",
+    "ShowOnMainPage": true,
+    "Description": "Enim consequat nostrud adipisicing ullamco aute ipsum amet pariatur culpa excepteur non eu ea. Eu irure nisi qui laboris deserunt proident adipisicing est esse occaecat tempor ipsum magna mollit. Nulla ut ipsum reprehenderit et occaecat esse. Aliquip quis sit ex fugiat.\r\n"
+  },
+  {
+    "ProductID": 6,
+    "Price": 857.26,
+    "Name": "Leona Goodman",
+    "ShowOnMainPage": false,
+    "Description": "Laboris dolor eu mollit Lorem eiusmod aliqua quis sit id ad dolor commodo excepteur enim. Non nisi mollit eu exercitation cillum ipsum aliqua reprehenderit eu id et duis. Excepteur mollit officia amet id culpa. Sit dolore eiusmod id exercitation adipisicing consectetur ea in aliqua minim amet ea non. Est velit proident esse eu laborum consequat ipsum exercitation occaecat aliqua reprehenderit commodo.\r\n"
+  },
+  {
+    "ProductID": 7,
+    "Price": 73.64,
+    "Name": "Pat Hunter",
+    "ShowOnMainPage": true,
+    "Description": "Exercitation consequat consequat ex sunt aliqua eu proident ad. Voluptate minim voluptate qui excepteur nisi in Lorem eu occaecat commodo ad. Quis duis nostrud voluptate sint fugiat laboris qui ipsum culpa adipisicing excepteur sint consectetur. Elit ea reprehenderit consectetur irure.\r\n"
+  },
+  {
+    "ProductID": 8,
+    "Price": 502.10,
+    "Name": "Stanton Warner",
+    "ShowOnMainPage": false,
+    "Description": "Non elit id est dolor. Excepteur labore cupidatat irure ea labore cupidatat sit dolor ex velit do. Amet nostrud non ullamco labore. Eu sint voluptate sunt in reprehenderit irure in labore nostrud pariatur eu ipsum. Officia in velit qui occaecat voluptate fugiat enim. Labore nulla labore ea occaecat consequat fugiat labore.\r\n"
+  },
+  {
+    "ProductID": 9,
+    "Price": 788.89,
+    "Name": "Beard Moran",
+    "ShowOnMainPage": false,
+    "Description": "Deserunt laboris duis sunt elit laborum non laborum sunt ea magna. Ex do magna Lorem ipsum tempor pariatur commodo magna ipsum. Aliquip ea aliqua aute qui tempor. Fugiat laboris anim officia labore cillum eiusmod proident duis. Anim sint laboris adipisicing deserunt magna ullamco qui.\r\n"
+  }
+]

@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Home Page";
-    var SaleLeader = Model.Where(x => x.FlagSaleLeader).ToList();
+    var SaleLeader = Model.Where(x => x.FlagSaleLeader);
 }
 
 <div class="text-center col-12">

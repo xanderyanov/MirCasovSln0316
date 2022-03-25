@@ -34,7 +34,11 @@ namespace MirChasov.Controllers
                 {
                     CurrentPage = productPage,
                     ItemsPerPage = PageSize,
-                    TotalItems = products.Count()
+                    TotalItems = id == null ?
+                        products.Count() :
+                        products.Where(e =>
+                            e.Brand == id).Count()
+
                 },
                 CurrentCategory = id
             });
