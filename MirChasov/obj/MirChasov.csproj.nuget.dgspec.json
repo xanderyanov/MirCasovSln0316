@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\aaaMirChasov2022\\MirCasovSln0316\\MirChasov\\MirChasov.csproj": {}
+    "D:\\aaaMirChasov2022\\MirChasovSln\\MirChasov\\MirChasov.csproj": {}
   },
   "projects": {
-    "C:\\aaaMirChasov2022\\MirCasovSln0316\\MirChasov\\MirChasov.csproj": {
+    "D:\\aaaMirChasov2022\\MirChasovSln\\MirChasov\\MirChasov.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\aaaMirChasov2022\\MirCasovSln0316\\MirChasov\\MirChasov.csproj",
+        "projectUniqueName": "D:\\aaaMirChasov2022\\MirChasovSln\\MirChasov\\MirChasov.csproj",
         "projectName": "MirChasov",
-        "projectPath": "C:\\aaaMirChasov2022\\MirCasovSln0316\\MirChasov\\MirChasov.csproj",
-        "packagesPath": "C:\\Users\\Xander\\.nuget\\packages\\",
-        "outputPath": "C:\\aaaMirChasov2022\\MirCasovSln0316\\MirChasov\\obj\\",
+        "projectPath": "D:\\aaaMirChasov2022\\MirChasovSln\\MirChasov\\MirChasov.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\aaaMirChasov2022\\MirChasovSln\\MirChasov\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Xander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,12 +63,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.22, 3.1.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -77,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

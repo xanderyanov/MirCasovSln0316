@@ -3,19 +3,40 @@
 @{
     ViewData["Title"] = "Home Page";
     var SaleLeader = Model.Where(x => x.FlagSaleLeader);
+    var NewTovar = Model.Where(x => x.FlagNew);
+
 }
 
 <div class="text-center col-12">
     <h1 class="display-4">Главная страница</h1>
-
+    
+    <h2>Хиты продаж</h2>
     <div class="row">
+        
         @foreach (var p in SaleLeader) {
+            if (p.ImgName == null) { p.ImgName = "logo1.png"; }
             <div class="card col-1 mb-3">
                 <h3>@p.Title</h3>
-                <img src="/img/test1.jpg" alt="Alternate Text" />
+                <img src="https://mirchasov64.ru/uploads/aaaclock/@p.ImgName" alt="Alternate Text" />
                 <p>@p.Brand</p>
                 @p.Description
                     <p>@p.dblCaseSize</p>
+                <h4>@p.PriceWithDiscount.ToString("c")</h4>
+            </div>
+        }
+    </div>
+    
+    <h2>Новые поступления</h2>
+    <div class="row">
+        
+        @foreach (var p in NewTovar) {
+            if (string.IsNullOrEmpty(p.ImgName)) { p.ImgName = "logo1.png"; }
+            <div class="card col-1 mb-3">
+                <h3>@p.Title</h3>
+                <img src="https://mirchasov64.ru/uploads/aaaclock/@p.ImgName" alt="Alternate Text" />
+                <p>@p.Brand</p>
+                @p.Description
+                    <p>@if (p.dblCaseSize != 0) { p.dblCaseSize }</p>
                 <h4>@p.PriceWithDiscount.ToString("c")</h4>
             </div>
         }
