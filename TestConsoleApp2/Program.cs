@@ -6,23 +6,36 @@ namespace TestConsoleApp2
     {
         static void Main(string[] args)
         {
-            //int a = int.Parse(Console.ReadLine());
-            //int b = int.Parse(Console.ReadLine());
-            //int c = a / b;
-            //int d = a % b;
-            //Console.WriteLine(a + " / " + b + " = " a / b);
+            
+            //Сколько книг поместится на полке при заданных высотах полки и книг (все они однаковые)
 
+            //Вводим числа (тут я задаю сразу в программе, напиши чтобы вводились - так по условию)
+            double H = 20; //высота полки (тип double предусматривает ввод не целого числа)
+            double W = 40; //ширина полки
+            double h = 16; //высота книги
+            double w = 2;  //ширина книги
 
-            string[] b = Console.ReadLine().Split(new char[] { ' ' });
+            
 
-            int rezult = 0;
+            if (H > h && W > w) { //проверка, если в полку вообще поместится книга - можно в принципе не делать, но лучше с проверкой - защитой от дурака
+                
+                //книг вертикально
+                int verticalCount = (int)(W / w); // тип int преобразует в целое число (отбрасывает дробную часть), так как нам нужно только целое число.
+                // если вмещается 2,5 книги - то мы считаем только 2 (т.к. пол книги нам не подходит)
+                // если нет преобразования типов - надо просто округлять до целых - это на счет pyton
 
-            foreach (string s in b)
-            {
-                rezult += int.Parse(s);
+                //колонок книг в оставшееся место горизонтально
+                int horizontCol = (int)(W / h);
+
+                //оставшихся рядов горизонтально
+                int horizontRow = (int)((H - h) / w);
+
+                //всего книг войдет
+                int result = verticalCount + (horizontCol * horizontRow);
+
+                Console.WriteLine(result);
+                
             }
-
-            Console.WriteLine(rezult);
         }
     //Console.WriteLine(int.Parse(b[0]) + int.Parse(b[1]));
 

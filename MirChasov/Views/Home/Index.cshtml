@@ -14,15 +14,7 @@
     <div class="row">
         
         @foreach (var p in SaleLeader) {
-            if (p.ImgName == null) { p.ImgName = "logo1.png"; }
-            <div class="card col-1 mb-3">
-                <h3>@p.Title</h3>
-                <img src="https://mirchasov64.ru/uploads/aaaclock/@p.ImgName" alt="Alternate Text" />
-                <p>@p.Brand</p>
-                @p.Description
-                    <p>@p.dblCaseSize</p>
-                <h4>@p.PriceWithDiscount.ToString("c")</h4>
-            </div>
+            <partial name="ProductSummary" model="p" />
         }
     </div>
     
@@ -30,15 +22,7 @@
     <div class="row">
         
         @foreach (var p in NewTovar) {
-            if (string.IsNullOrEmpty(p.ImgName)) { p.ImgName = "logo1.png"; }
-            <div class="card col-1 mb-3">
-                <h3>@p.Title</h3>
-                <img src="https://mirchasov64.ru/uploads/aaaclock/@p.ImgName" alt="Alternate Text" />
-                <p>@p.Brand</p>
-                @p.Description
-                    <p>@if (p.dblCaseSize != 0) { p.dblCaseSize }</p>
-                <h4>@p.PriceWithDiscount.ToString("c")</h4>
-            </div>
+            <partial name="ProductSummary" model="p" />
         }
     </div>
     <img src="https://mirchasov64.ru/assets/img/logo1.png" alt="Alternate Text" />

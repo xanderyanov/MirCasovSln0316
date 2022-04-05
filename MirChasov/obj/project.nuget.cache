@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "R3Q6+nizOGIjp2O7T6ZdedMu0/46BY0PcrkuHOZwu+XLVU2D4HY3smGip/VOuguOyApu8LWrB0+t68d2KlnyFg==",
+  "dgSpecHash": "GFPvYzgu+k0q3kM4gH8ZW+0z8RqPCO+6kF3Pfi7fxwP5NqQNf84D701+q5FLkAWYw13BzFEgMOLRIykLO0Veqg==",
   "success": true,
   "projectFilePath": "D:\\aaaMirChasov2022\\MirChasovSln\\MirChasov\\MirChasov.csproj",
   "expectedPackageFiles": [
@@ -30,7 +30,8 @@
     "C:\\Users\\user\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.23\\microsoft.netcore.app.host.win-x64.3.1.23.nupkg.sha512"
   ],
   "logs": []
 }
