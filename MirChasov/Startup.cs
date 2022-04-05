@@ -54,6 +54,10 @@ namespace MirChasov
 
 
                 endpoints.MapControllerRoute("route1",
+                   "Product/{id?}",
+                   new { controller = "Product", action = "Product" });
+
+                endpoints.MapControllerRoute("route2",
                    "{controller}/{action}/{id?}",
                    new { controller = "Home", action = "Index" });
 
