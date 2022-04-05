@@ -2,17 +2,17 @@
 
 @if (string.IsNullOrEmpty(Model.ImgName)) { Model.ImgName = "logo1.png"; }
 
-<div class="card__outer col-2 mb-3 p-2">
+<div class="card__outer col-2 p-2">
     <div class="card h-100 d-flex flex-column p-2">
         <h4>@Model.Title</h4>
         <img src="https://mirchasov64.ru/uploads/aaaclock/@Model.ImgName" alt="Alternate Text" />
-        <p>@Model.Brand</p>
+        <p class="mt-auto">@Model.Brand</p>
         @Model.Description
                         
         @if (Model.dblCaseSize != 0.0) {
             <p>@Model.dblCaseSize</p>
         }
                         
-        <h5 class="mt-auto">@Model.PriceWithDiscount.ToString("c")</h5>
+        <h5 >@Model.PriceWithDiscount.ToString("c")</h5>
     </div>
 </div>

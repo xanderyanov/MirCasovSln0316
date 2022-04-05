@@ -746,4 +746,4 @@ D:\aaaMirChasov2022\MirChasovSln\MirChasov\bin\Debug\netcoreapp3.1\tr\Microsoft.
 D:\aaaMirChasov2022\MirChasovSln\MirChasov\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 D:\aaaMirChasov2022\MirChasovSln\MirChasov\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\netcoreapp3.1\MirChasov.MvcApplicationPartsAssemblyInfo.cs
-D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ProductSummary.cshtml.g.cs
+D:\aaaMirChasov2022\MirChasovSln\MirChasov\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Partials\ProductSummary.cshtml.g.cs

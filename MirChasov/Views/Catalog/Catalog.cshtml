@@ -6,7 +6,7 @@
 }
 
 <div id="categories" class="col-3">
-            <vc:navigation-menu />
+            <vc:navigation-menu product="new Product()" />
 </div>
 <div class="col-9">
     <div class="text-center">
@@ -14,7 +14,8 @@
 
         <div class="row">
             @foreach (var p in Model.Products) {
-               <partial name="ProductSummary" model="p" />            }
+               <partial name="Partials/ProductSummary" model="p" />                //await ViewStart.ProductSummary(p);
+            }
         </div>
             <div class="row">            <div page-model="@Model.PagingInfo" page-action="Brand" page-classes-enabled="true"
                  page-class="btn m-1 " page-class-normal="m-1 btn-outline-dark"
