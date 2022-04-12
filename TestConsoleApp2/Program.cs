@@ -1,43 +1,45 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace TestConsoleApp2
 {
+
+
     class Program
     {
+
         static void Main(string[] args)
         {
+            Random rnd = new Random();
             
-            //Сколько книг поместится на полке при заданных высотах полки и книг (все они однаковые)
+            var collection = new List<Product>();
 
-            //Вводим числа (тут я задаю сразу в программе, напиши чтобы вводились - так по условию)
-            double H = 20; //высота полки (тип double предусматривает ввод не целого числа)
-            double W = 40; //ширина полки
-            double h = 16; //высота книги
-            double w = 2;  //ширина книги
+            for (int i = 0; i < 10; i++) {
 
-            
+                var product = new Product()
+                {
+                    Name = "Продукт" + i,
+                    Energy = rnd.Next(10, 500)
+                };
 
-            if (H > h && W > w) { //проверка, если в полку вообще поместится книга - можно в принципе не делать, но лучше с проверкой - защитой от дурака
-                
-                //книг вертикально
-                int verticalCount = (int)(W / w); // тип int преобразует в целое число (отбрасывает дробную часть), так как нам нужно только целое число.
-                // если вмещается 2,5 книги - то мы считаем только 2 (т.к. пол книги нам не подходит)
-                // если нет преобразования типов - надо просто округлять до целых - это на счет pyton
-
-                //колонок книг в оставшееся место горизонтально
-                int horizontCol = (int)(W / h);
-
-                //оставшихся рядов горизонтально
-                int horizontRow = (int)((H - h) / w);
-
-                //всего книг войдет
-                int result = verticalCount + (horizontCol * horizontRow);
-
-                Console.WriteLine(result);
-                
+                collection.Add(product);
             }
-        }
-    //Console.WriteLine(int.Parse(b[0]) + int.Parse(b[1]));
 
+            var result = from item in collection
+                         where item.Energy < 200
+                         select item;
+
+            var result2 = collection.Where(item => item.Energy < 200);
+
+            foreach(var item in result2)
+            {
+                Console.WriteLine(item);
+            }
+
+            
+        }
     }
+
+    
 }
